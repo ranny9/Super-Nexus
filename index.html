@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IOPN Hub • Official Tools</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0a0a0a;
+      color: white;
+      min-height: 100vh;
+    }
+
+    .header {
+      background: #0f0f0f;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1a1a1a;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .connect-btn {
+      background: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      padding: 10px 24px;
+      border-radius: 50px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .connect-btn:hover {
+      background: #00ffcc;
+      color: black;
+    }
+
+    .status {
+      color: #00ffcc;
+      font-size: 0.95rem;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #001a1a, #0a001f);
+      padding: 120px 20px 90px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3.8rem;
+      background: linear-gradient(90deg, #00ffcc, #00ccff);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 16px;
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+      opacity: 0.9;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 70px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 35px;
+      text-align: center;
+      color: #00ffcc;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: #111111;
+      border: 1px solid #222;
+      border-radius: 16px;
+      padding: 30px;
+      transition: all 0.3s;
+    }
+
+    .card:hover {
+      border-color: #00ffcc;
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px rgba(0, 255, 204, 0.2);
+    }
+
+    .btn {
+      margin-top: 18px;
+      padding: 12px 28px;
+      background: transparent;
+      border: 2px solid #00ffcc;
+      color: #00ffcc;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 600;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      background: #00ffcc;
+      color: black;
+    }
+
+    .coming-soon .btn {
+      border-color: #555;
+      color: #888;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 60px 20px;
+      border-top: 1px solid #222;
+      opacity: 0.85;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <h2>IOPN Hub</h2>
+    <div style="text-align: right;">
+      <span class="status">● Connected to <strong>OPN Testnet</strong></span><br><br>
+      <button class="connect-btn" onclick="alert('Wallet Connect feature will be available on Mainnet')">Connect Wallet</button>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <h1>IOPN Hub</h1>
+    <p class="subtitle">The official gateway to the IOPN Network ecosystem</p>
+  </div>
+
+  <!-- Core Tools -->
+  <div class="section">
+    <h2 class="section-title">🛠️ Core Tools</h2>
+    <div class="cards">
+      <div class="card"><h3>💧 Faucet</h3><p>Get Test Tokens</p><a href="https://faucet.iopn.tech/" class="btn">Open Faucet</a></div>
+      <div class="card"><h3>🔄 Swap</h3><p>Trade Tokens</p><a href="https://swap.iopn.tech/" class="btn">Trade Now</a></div>
+      <div class="card"><h3>🏛️ RWA</h3><p>Real World Assets</p><a href="https://rwa.iopn.tech/" class="btn">Explore RWA</a></div>
+      <div class="card"><h3>🔎 Explorer</h3><p>Blockchain Explorer</p><a href="https://testnet.iopn.tech/" class="btn">View Explorer</a></div>
+    </div>
+  </div>
+
+  <!-- Trading -->
+  <div class="section">
+    <h2 class="section-title">📈 Trading & Finance</h2>
+    <div class="cards">
+      <div class="card"><h3>🌉 Bridge</h3><p>Cross-chain Bridge</p><a href="#" class="btn">Coming Soon</a></div>
+      <div class="card"><h3>⚡ Perpetual Trading</h3><p>Futures Trading</p><a href="#" class="btn">Coming Soon</a></div>
+      <div class="card"><h3>🔮 Prediction Market</h3><p>Polymarket Style</p><a href="#" class="btn">Coming Soon</a></div>
+    </div>
+  </div>
+
+  <!-- Community -->
+  <div class="section">
+    <h2 class="section-title">🌐 Community & Resources</h2>
+    <div class="cards">
+      <div class="card"><h3>📖 Documentation</h3><p>Guides & Whitepaper</p><a href="https://iopn.gitbook.io/iopn" class="btn">Read Docs</a></div>
+      <div class="card"><h3>🏗️ Builder Dashboard</h3><p>For Developers</p><a href="https://builders.iopn.tech/" class="btn">Open Dashboard</a></div>
+      <div class="card"><h3>💬 Discord</h3><p>Join Community</p><a href="https://discord.gg/aVKgGpx3" class="btn">Join Discord</a></div>
+      <div class="card"><h3>🐦 Official X</h3><p>Latest Updates</p><a href="https://x.com/IOPn_io" class="btn">Follow @IOPn_io</a></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p><strong>Made by <a href="https://x.com/0xDealova" style="color:#00ffcc;">0xDealova</a></strong></p>
+    <p>IOPN Network Hub v2 • Testnet Ecosystem</p>
+  </div>
+
+</body>
+</html>
